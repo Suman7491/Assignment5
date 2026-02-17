@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="Portfolio.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">Suman's Portfolio</a>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <img
+          src="./Profile_photo.jpeg"
+          alt="Profile Picture"
+          class="profile-img"
+        />
+        <div>
+          <h1>Hi, I'm Suman Das</h1>
+          <p>
+            A Frontend Developer passionate about building accessible and
+            responsive web applications.
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="container">
+        <h2>About Me</h2>
+        <p style="text-align: center; max-width: 700px; margin: 0 auto">
+          I am a web developer with a focus on clean code and user experience. I
+          love solving complex problems with simple solutions. When I'm not
+          coding, you can find me exploring new technologies or contributing to
+          open source.
+        </p>
+      </section>
+
+      <section id="skills" class="container">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+          <img
+            src="./html.jpg"
+            alt=""
+            height="150px"
+            width="150px"
+            class="badge"
+          />
+          <img
+            src="./css.jpg"
+            alt=""
+            height="150px"
+            width="150px"
+            class="badge"
+          />
+          <img
+            src="./js.jpg"
+            alt=""
+            height="150px"
+            width="150px"
+            class="badge"
+          />
+          <img
+            src="./react.webp"
+            alt=""
+            height="150px"
+            width="150px"
+            class="badge"
+          />
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="card-img"><img src="spotify.webp" alt="" /></div>
+            <div class="card-content">
+              <h3>Spotify Clone</h3>
+              <p>
+                Spotify clone built with semantic HTML and modern CSS to
+                showcase my work.
+              </p>
+              <a
+                href="https://github.com/Suman7491/Assignment1"
+                class="card-link"
+                target="_blank"
+                >View Code &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-img"><img src="Netflix.webp" alt="" /></div>
+            <div class="card-content">
+              <h3>Netflix clone</h3>
+              <p>Netflix clone built with mordern HTML and CSS</p>
+              <a
+                href="https://github.com/Suman7491/Assignment2"
+                target="_blank"
+                class="card-link"
+                >View Code &rarr;</a
+              >
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="card-img"><img src="No_broker.webp" alt="" /></div>
+            <div class="card-content">
+              <h3>No broker</h3>
+              <p>No Broker landing page clone</p>
+              <a href="#" class="card-link">View Code &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="container">
+        <h1>Send Your Query</h1>
+        <div class="text-box">
+          <span>We will response.Within 24hrs</span>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Type your Name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Hi this is Suman you can connect or follow me on social media.</p>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
